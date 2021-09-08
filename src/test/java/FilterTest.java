@@ -39,7 +39,7 @@ public class FilterTest {
   @Test
   public void filter() {
     driver.get("http://spree-vapasi.herokuapp.com/");
-    driver.manage().window().setSize(new Dimension(1346, 1098));
+    driver.manage().window().setSize(new Dimension(1346, 2000));
     driver.findElement(By.linkText("Bags")).click();
     assertThat(driver.findElement(By.cssSelector(".taxon-title")).getText(), is("Bags"));
     driver.findElement(By.linkText("Mugs")).click();
